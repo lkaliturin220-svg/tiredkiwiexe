@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>TIRED_kiwi.exe</title>
+<link>https://t.me/tiredkiwiexe</link>
+<description>AI, Homelab, Bug Bounty. Нейросети, сервера и уязвимости.</description>
+<language>ru</language>
+<item>
+<title>Свой ChatGPT на домашнем сервере: полный гайд</title>
+<link>https://ollama.com</link>
+<description>Зачем платить за подписки если можно развернуть LLM локально?
+
+Ставим Ollama:
+• curl -fsSL https://ollama.com/install.sh | sh
+• ollama pull llama3.2:3b
+
+Веб-интерфейс:
+• docker run -d -p 3000:8080 ghc...</description>
+<content:encoded><![CDATA[Зачем платить за подписки если можно развернуть LLM локально?
+
+Ставим Ollama:
+• curl -fsSL https://ollama.com/install.sh | sh
+• ollama pull llama3.2:3b
+
+Веб-интерфейс:
+• docker run -d -p 3000:8080 ghcr.io/open-webui/open-webui
+
+Открываем http://ваш-сервер:3000 — и у вас свой ChatGPT.
+
+Бенчмарки на i5-8500: llama3.2 — 25 токенов/сек.
+
+#ai #ollama]]></content:encoded>
+<dc:creator>TIRED_kiwi.exe</dc:creator>
+<pubDate>2026-07-24T08:18:12.927225</pubDate>
+<enclosure url="https://lkaliturin220-svg.github.io/tiredkiwiexe/img/img_0a40e3c9.jpg" type="image/jpeg"/>
+<media:content url="https://lkaliturin220-svg.github.io/tiredkiwiexe/img/img_0a40e3c9.jpg" medium="image"/>
+</item>
+<item>
+<title>Homelab для новичка: с чего начать в 2026</title>
+<link>https://www.proxmox.com</link>
+<description>Хотите свой сервер дома? Держите roadmap.
+
+Железо (бюджет 15-25к):
+• Мини-ПК на N100 — 10-15к
+• Б/У i5-8xxx — 8-12к
+• SSD 512 ГБ — 3-4к
+
+Что ставить:
+1. Proxmox VE
+2. Docker в LXC
+3. Pi-hole — реклама...</description>
+<content:encoded><![CDATA[Хотите свой сервер дома? Держите roadmap.
+
+Железо (бюджет 15-25к):
+• Мини-ПК на N100 — 10-15к
+• Б/У i5-8xxx — 8-12к
+• SSD 512 ГБ — 3-4к
+
+Что ставить:
+1. Proxmox VE
+2. Docker в LXC
+3. Pi-hole — реклама исчезнет
+4. WireGuard VPN
+5. Nginx Proxy Manager
+
+Первые три сервиса закрывают 90% потребностей.
+
+#homelab #proxmox]]></content:encoded>
+<dc:creator>TIRED_kiwi.exe</dc:creator>
+<pubDate>2026-07-24T08:18:12.927257</pubDate>
+<enclosure url="https://lkaliturin220-svg.github.io/tiredkiwiexe/img/img_a66286c1.jpg" type="image/jpeg"/>
+<media:content url="https://lkaliturin220-svg.github.io/tiredkiwiexe/img/img_a66286c1.jpg" medium="image"/>
+</item>
+<item>
+<title>Критические уязвимости июля 2026</title>
+<link>https://www.shodan.io</link>
+<description>1. Ollama &lt; 0.5.7 — RCE, CVSS 9.8
+   Фикс: OLLAMA_HOST=127.0.0.1
+
+2. OpenSSH 9.2-9.5 — Race Condition, CVSS 8.1
+   Фикс: обновить до 9.6+
+
+3. Proxmox &lt; 8.3.2 — PrivEsc, CVSS 7.8
+   Фикс: apt dist-upgr...</description>
+<content:encoded><![CDATA[1. Ollama < 0.5.7 — RCE, CVSS 9.8
+   Фикс: OLLAMA_HOST=127.0.0.1
+
+2. OpenSSH 9.2-9.5 — Race Condition, CVSS 8.1
+   Фикс: обновить до 9.6+
+
+3. Proxmox < 8.3.2 — PrivEsc, CVSS 7.8
+   Фикс: apt dist-upgrade
+
+Что делать: обновить всё, закрыть порты, проверить серверы на Shodan.
+
+#cve #security]]></content:encoded>
+<dc:creator>TIRED_kiwi.exe</dc:creator>
+<pubDate>2026-07-24T08:18:12.927261</pubDate>
+<enclosure url="https://lkaliturin220-svg.github.io/tiredkiwiexe/img/img_219ce424.jpg" type="image/jpeg"/>
+<media:content url="https://lkaliturin220-svg.github.io/tiredkiwiexe/img/img_219ce424.jpg" medium="image"/>
+</item>
+</channel>
+</rss>
